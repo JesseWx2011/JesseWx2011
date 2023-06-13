@@ -1,7 +1,7 @@
-- 👋 Hi, I’m @JesseLikesWeather
+- 👋 Hi, I’m @JesseLikesWeather (aka, SuperYoshiKart)
 
 
-I love weather. The end.
+I love weather... and Yoshi. The end.
 
 
 <h1>Looks like in my area it is:</h1>
