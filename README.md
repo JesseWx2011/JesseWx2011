@@ -6,8 +6,7 @@ I love weather... and Yoshi. The end.
 
 <h1>Looks like in my area it is:</h1>
 
-<a href="https://app.weathercloud.net/d3641315345"><img src="https://app.weathercloud.net/device/sticker/3641315345"></a>
-
+<h2>Sadly since I am moving, My weather station data will not be sending reports. It will probably start sending data again sometime in July.</h2>
 
 <h2>My best SC Flap is a 5"26 in Frappe Snowland. (MK64)</h2>
 
