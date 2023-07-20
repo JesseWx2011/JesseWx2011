@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="style.css">
 - 👋 Hi, I’m @JesseLikesWeather (aka, SuperYoshiKart)
 
 
@@ -9,7 +8,7 @@ I love weather... and Yoshi. The end.
 
 <a href="https://app.weathercloud.net/d3641315345"><img src="https://app.weathercloud.net/device/sticker/3641315345"></a>
 <h2>My best SC Flap is a 5"26 in Frappe Snowland. (MK64)</h2>
-  <center><h2>Most Recent Time - 29"47 Wario Stadium 7/8/23</h2></center>
+  <center><h2>Most Recent Time - 29"84 Wario Stadium 7/8/23</h2></center>
 
 <h3>I plan to release more of my MK records soon!</h3>
 
