@@ -1,0 +1,10 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN"><HTML><HEAD>
+<TITLE>Weather Data</TITLE>
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META NAME="keywords" CONTENT="Weather Display Live, Weather Display, Weather Station, Weather Software">
+<META NAME="GENERATOR" CONTENT="Mozilla/3.03Gold (Win95; I) [Netscape]">
+<META HTTP-EQUIV="Expires" CONTENT="Mon, 06 Jan 1990 00:00:01 GMT">
+<META HTTP-EQUIV="Refresh" CONTENT="600">
+<META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+</HEAD>
+<BODY BACKGROUND="">
