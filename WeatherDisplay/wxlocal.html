@@ -1,0 +1,544 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-US">
+  <head>
+
+<!-- ##### CHANGE  title to your site ##### -->
+
+    <title>Yoshi's Weather Report</title>
+
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=ISO-8859-1" />
+
+<!-- ##### CHANGE  description to your site ##### -->
+
+    <meta name="description" content="Personal weather station." />
+
+<style type="text/css">
+/**********************************
+ * TITLE: Gila Screen Stylesheet  * 
+ * URI  : gila/gila-screen.css    *
+ * MODIF: 2003-Apr-30 19:09 +0800 *
+ **********************************/
+
+body {
+  color: black;
+  background-color: rgb(243,242,235);
+  font-family: verdana, helvetica, arial, sans-serif;
+  font-size: 73%;  /* Enables font size scaling in MSIE */
+  margin: 0;
+  padding: 0;
+}
+
+html > body {
+  font-size: 9pt;
+}
+
+.doNotDisplay {
+  display: none !important;
+}
+
+.picfl {
+	   float:left;
+	   padding-right: 5px;
+	   position: relative;
+}
+
+.picfr {
+	   float:right;
+	   padding-left: 5px;
+	   position: relative;
+}
+
+.picfc {
+	   text-align: center;
+	   padding-left: 5px;
+	   padding-right: 5px;
+	   position: relative;
+}
+
+
+/* ##### Header ##### */
+
+/* ##### CHANGE background-color to change header color, hex code is OK ##### */
+/* ##### Hex Color Chart - http://www.hypersolutions.org/pages/rgbhex.html  ##### */
+
+#header {
+  color: inherit;
+  background-color: #669933;
+}
+
+.headerTitle {
+  margin: 0;
+  padding: 0.25em 4mm 0.25em 4mm;
+}
+
+.headerTitle a {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 110%;  /* For MSIE */
+  font-weight: bold;
+  font-style: italic;
+}
+
+.headerTitle > a {
+  font-size: 138%;  /* For fully standards-compliant user agents */
+}
+
+.headerTitle span {
+  color: white;
+  background-color: transparent;
+  font-weight: normal;
+}
+
+.subHeader {
+  color: white;
+  float: left;
+  clear: left;
+  position: relative;
+  background-color: black;
+  font-size: 109%;
+  margin: 0;
+  padding: 0.5ex 1ex;
+}
+
+.subHeaderRight {
+  color: white;
+  background-color: black;
+  font-size: 109%;
+  text-align: right;
+  margin:  0;
+  padding: 0.5ex 2ex;
+}
+
+.subHeader a {
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0;
+  padding: 0 1ex;
+}
+
+.subHeader a:hover {
+  color: black;
+  background-color: white;
+}
+
+
+/* ##### Left Side Bar ##### */
+
+.leftSideBar {
+  width: 13.5em;
+  float: left;
+  clear: left;
+}
+
+.leftSideBar .sideBarTitle {
+  color: rgb(64,64,64);
+  background-color: rgb(230,223,207);
+  font-weight: bold;
+  margin: 0;
+  padding: 0.8ex 1ex;
+}
+
+.leftSideBar ul {
+  list-style-type: none;
+  list-style-position: outside;
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+
+.leftSideBar li {
+  margin: 1ex;
+  padding: 0 0 0 0;
+}
+
+.leftSideBar a {
+  color: rgb(166,140,83);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.leftSideBar a:hover {
+  color: rgb(64,64,64);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.leftSideBar .sideBarText {
+  color: black;
+  background-color: transparent;
+  line-height: 1.25em;
+  margin: 1ex 0.25ex 1.5em 0.75ex;
+  padding: 0;
+  display: block;
+}
+
+.leftSideBar .sideBarText a {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.leftSideBar .sideBarText a:hover {
+  text-decoration: none;
+}
+
+.leftSideBar .thisPage {
+  color: rgb(64,64,64);
+  background-color: transparent;
+  font-weight: bold;
+}
+
+
+/* ##### Right Side Bar ##### */
+
+.rightSideBar {
+  width: 11em;
+  margin: 2ex 0.75ex 0 0;
+  padding: 0;
+  float: right;
+  clear: right;
+  border: 1px solid rgb(216,210,195);
+}
+
+[class~="rightSideBar"] {
+  margin-right: 1.5ex;
+}
+
+.rightSideBar .sideBarTitle {
+  color: black;
+  background-color: rgb(230,223,207);
+  font-weight: bold;
+  margin: 1.25ex 1ex;
+  padding: 0.9ex 1ex;
+}
+
+.rightSideBar a {
+  color: rgb(166,140,83);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.rightSideBar a:hover {
+  text-decoration: none;
+}
+
+.rightSideBar .sideBarText {
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0 2ex 1em 2ex;
+}
+
+.rightSideBar .more {
+  text-decoration: none;
+  text-align: right;
+  margin: 0;
+  padding: 0 2ex 1em 2ex;
+  display: block;
+}
+
+.rightSideBar .more:hover {
+  text-decoration: underline;
+}
+
+
+/* ##### Main Copy ##### */
+
+#main-copy {
+  color: black;
+  background-color: white;
+  text-align: justify;
+  line-height: 1.5em;
+  margin: 0 0 0 13.5em;
+  padding: .5ex 13.25em 1em 1em;
+  border-left: 1px solid rgb(216,210,195);
+}
+
+#main-copy h1 {
+  color: rgb(166,140,83);
+  background-color: transparent;
+  font-family: arial, verdana, helvetica, sans-serif;
+  font-size: 175%;
+  font-weight: bold;
+  font-style: italic;
+  text-align: left;
+  margin: 1em 0 0 0;
+  padding: 1em 0 0 0;
+  border-top: 1px solid rgb(216,210,195);
+}
+
+#main-copy a {
+  color: rgb(168,140,83);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#main-copy a:hover {
+  text-decoration: none;
+}
+
+p {
+  margin: 1em 0 1.5em 0;
+  padding: 0;
+}
+
+dt {
+  font-weight: bold;
+  margin: 0;
+  padding: 0 0 0.5ex 0;
+}
+
+dd {
+  margin: 0 0 1.5em 1.5em;
+  padding: 0;
+}
+
+
+/* ##### Footer ##### */
+
+#footer {
+  color: black;
+  background-color: rgb(230,223,207);
+  font-size: 92%;
+  text-align: center;
+  line-height: 1.25em;
+  margin: 0;
+  padding: 1em 4mm 1em 4mm;
+  clear: both;
+}
+
+#footer div {
+  margin: 0;
+  padding: 0 0 1ex 0;
+}
+
+#footer a {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#footer a:hover {
+  text-decoration: none;
+}
+
+</style>
+
+  </head>
+
+  <body>
+    <!-- For non-visual user agents: -->
+      <div id="top"><a href="#main-copy" class="doNotDisplay doNotPrint">Skip to main content.</a></div>
+
+    <!-- ##### Header ##### -->
+
+<!-- ##### CHANGE  title to your site ##### -->
+
+    <div id="header">
+      <h1 class="headerTitle">
+        <a href="./index" title="Browse to homepage">Your Weather Website</a>
+      </h1>
+
+<!-- ##### CHANGE  location to your location, avoid abbreviations ##### -->
+
+      <div class="subHeader">
+        Somewhere, State, USA
+
+      </div>
+
+      <div class="subHeaderRight">Updated: %date% %time%</div>
+
+    </div>
+
+    <div id="side-bar">
+
+      <!-- ##### Left Sidebar ##### -->
+
+      <div class="leftSideBar">
+        <p class="sideBarTitle">Temperature</p>
+        <ul>
+          <li>Current: %temp0minuteago% &deg;F
+		<div style="color: blue; font-size: 80%; text-align: right;">%tempchangelasthourfaren% 
+&deg;F/hr</div></li>
+          <li>High:<br/>%maxtemp% - %maxtempt%</li>
+          <li>Low:<br/>%mintemp% - %mintempt%</li>
+        </ul>
+
+        <p class="sideBarTitle">Humidity</p>
+        <ul>
+          <li>Current: %hum0minuteago%%</li>
+          <li>High:<br/>%highhum%% - %highhumt%</li>
+          <li>Low:<br/>%lowhum%% - %lowhumt%</li>
+        </ul>
+
+        <p class="sideBarTitle">Pressure</p>
+        <ul>
+          <li>Current: %baro0minuteago% in.
+			<div style="color: blue; font-size: 80%; text-align: right;">%trend%</div></li>
+          <li>High:<br/>%highbaro% - %highbarot%</li>
+          <li>Low:<br/>%lowbaro% - %lowbarot%</li>
+        </ul>
+
+        <p class="sideBarTitle">Wind</p>
+        <ul>
+          <li>Current: %avgspd% %dirlabel%</li>
+          <li>Gust: %gstspd% %dirlabel%</li>
+          <li>Max: %maxgst% %maxgstdirectionletter%</li>
+        </ul>
+
+        <p class="sideBarTitle">Rain:</p>
+        <ul>
+          <li>Today: %dayrn%</li>
+          <li>Yest: %ystdyrain%</li>
+          <li>Month: %monthrn%</li>
+          <li>Year: %yearrn%</li>
+        </ul>
+
+        <p class="sideBarTitle">Validation</p>
+        <span class="sideBarText">This page is XHTML 1.0 compliant. Validate the <a 
+href="http://validator.w3.org/check/referer">XHTML</a> and <a href="http://jigsaw.w3.org/css-
+validator/check/referer">CSS</a> of this page.
+      </span>
+      </div>
+
+      <!-- ##### Right Sidebar ##### -->
+
+      <div class="rightSideBar">
+        <p class="sideBarTitle">Sun</p>
+
+        <div class="picfc"><img border="0" src="sunicon.jpg" width="104" height="72" alt="Sun"></img></div>
+
+        <div class="sideBarText">
+          Rise: %sunrise%
+		<br/>
+          Set: %sunset%
+        </div>
+
+        <p class="sideBarTitle">Moon</p>
+
+        <div class="picfc"><img border="0" src="moonicon.gif" width="104" height="72" alt="%moonage
+%"></img></div>
+
+        <div class="sideBarText">
+          Rise: %moonrise%
+		<br/>
+          Set: %moonset%
+        </div>
+
+        <p class="sideBarTitle">Links</p>
+
+        <div class="sideBarText">
+		<a href="http://www.noaa.gov" title="National Oceanic &amp; Atmospheric 
+Administration">NOAA</a><br/>
+		<a href="http://www.weather.gov" title="National Weather Service">NWS</a><br/>
+		<a href="http://www.weather-display.com" title="Weather Display">Weather 
+Display</a><br/>
+		<a href="http://www.weather-watch.com/smf/index.php" title="Weather Watch 
+Forums">Weather Watch</a><br/>
+	  </div>
+      </div>
+
+    </div>
+
+    <!-- ##### Main Copy ##### -->
+
+    <div id="main-copy">
+
+<!-- ##### CHANGE  regional radar to your region ##### */
+South Calif, Nevada, Arizona - http://icons.wunderground.com/data/640x480/radard1.gif
+Mid Calif, Nevada, Utah - http://icons.wunderground.com/data/640x480/radarc1.gif
+North Calif, Nevada, Oregan, Idaho - http://icons.wunderground.com/data/640x480/radarb1.gif
+Oregan, Idaho, Washington - http://icons.wunderground.com/data/640x480/radara1.gif
+Arizona, New Mexico, W Texas - http://icons.wunderground.com/data/640x480/radard2.gif
+New Mexico, Colorado, Utah - http://icons.wunderground.com/data/640x480/radarc2.gif
+Colorado, Wyoming, W Neb - http://icons.wunderground.com/data/640x480/radarb2.gif
+Wyoming, Montana - http://icons.wunderground.com/data/640x480/radara2.gif
+S Texas - http://icons.wunderground.com/data/640x480/radard3.gif
+Texas, Oklahoma, Arkansas - http://icons.wunderground.com/data/640x480/radarc3.gif
+Neb, Missouri, Iowa, Kansas - http://icons.wunderground.com/data/640x480/radarb3.gif
+N/S Dakota, Minnesota - http://icons.wunderground.com/data/640x480/radara3.gif
+Louisiana, Miss, Alabama, W Florida - http://icons.wunderground.com/data/640x480/radard4.gif
+Tenn, Kentucky - http://icons.wunderground.com/data/640x480/radarc4.gif
+Indiana, Ohio, Illinois, Kentucky - http://icons.wunderground.com/data/640x480/radarb4.gif
+Florida - http://icons.wunderground.com/data/640x480/radard5.gif
+Georgia, S/N Carolina - http://icons.wunderground.com/data/640x480/radarc5.gif
+Mid Atlantic States - http://icons.wunderground.com/data/640x480/radarb5.gif
+New England States - http://icons.wunderground.com/data/640x480/radara5.gif   ##### -->
+
+	  <h3>National Weather Service Forecast</h3> 
+        <div class="picfr"><img src="http://icons.wunderground.com/data/640x480/radarb3.gif" alt="Regional 
+Radar" width="320" height="240"></img></div>
+
+<p><b><span style="text-transform: uppercase">%5dayforecastdayday1%</span></b>
+<br /><span style="text-transform: capitalize">%5dayforecastday1%</span></p>
+
+<p><b><span style="text-transform: uppercase">%5dayforecastdayday2%</span></b>
+<br /><span style="text-transform: capitalize">%5dayforecastday2%</span></p>
+
+<p><b><span style="text-transform: uppercase">%5dayforecastdayday3%</span></b>
+<br /><span style="text-transform: capitalize">%5dayforecastday3%</span></p>
+
+<p><b><span style="text-transform: uppercase">%5dayforecastdayday4%</span></b>
+<br /><span style="text-transform: capitalize">%5dayforecastday4%</span></p>
+
+<p><b><span style="text-transform: uppercase">%5dayforecastdayday5%</span></b>
+<br /><span style="text-transform: capitalize">%5dayforecastday5%</span></p>
+
+<p><b><span style="text-transform: uppercase">%5dayforecastdayday6%</span></b>
+<br /><span style="text-transform: capitalize">%5dayforecastday6%</span></p>
+
+<p><b><span style="text-transform: uppercase">%5dayforecastdayday7%</span></b>
+<br /><span style="text-transform: capitalize">%5dayforecastday7%</span></p>
+
+<p>NWS Forecast: %5dayforecasttimestamp%</p>
+
+    </div>
+
+    <!-- ##### Footer ##### -->
+
+    <div id="footer">
+      <div class="doNotPrint">
+        <a href="#header">Top</a> |
+
+<!-- ##### CHANGE  email address below to your email address ##### -->
+
+        <a href="mailto:your@email.com" title="E-mail us">Contact Us</a>
+
+
+        <script language="javascript" type="text/javascript">
+        <!--
+        if (navigator.appName == 'Microsoft Internet Explorer' && 
+        parseInt(navigator.appVersion) >= 4)
+        {
+        document.write('| <a href=\"#\" onclick=\"javascript:window.external.AddFavorite        
+(location.href,document.title)\">');
+        document.write('Bookmark Page</a>');
+        }else
+        {var msg = '| <a href="" title="Bookmark Page" onClick="alert(' + "'Hit CTRL-D to bookmark this page'"+ 
+');">Bookmark Page</a>';
+        if(navigator.appName == "Netscape") msg += " (CTRL-D)";
+document.write(msg);
+        }
+        // -->
+        </script>
+      </div>
+
+      <div>
+
+<!-- ##### CHANGE  copyright info to your liking ##### -->
+
+        Copyright &copy; 2005, Your Weather Website |  
+          <a href="http://www.weather-display.com" title="Powered by Weather Display">Weather Display v
+%wdversion%</a> | 
+        Site template by
+          <a href="http://www.carterlake.org" title="Template by Carterlake.org">CarterLake.org</a> and <a 
+href="http://capmex.biz/resources/designs-by-haran" title="Haran">Haran</a><br />
+      <br class="doNotPrint" />Never base important decisions on this or any weather information obtained from 
+the Internet.<br class="doNotPrint" />
+      </div>
+    </div>
+  </body>
+</html>
