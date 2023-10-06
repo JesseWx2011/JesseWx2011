@@ -11,4 +11,48 @@
           <left><h2>My Weather Station data     __   Nearest Camera:</h2></left>
           <a href="https://app.weathercloud.net/d3641315345"><img src="https://app.weathercloud.net/device/sticker/3641315345"></a> <right><img src="https://chart.maryland.gov/thumbnails/76001126000a000e004ee33696235daa.jpg" alt="alternatetext"></right>
             <h3><left>and.. the area's forecast.</left></h3>
-            <iframe src="https://www.meteoblue.com/en/weather/widget/daily/alexandria_united-states_4744091?geoloc=fixed&days=7&tempunit=FAHRENHEIT&windunit=MILE_PER_HOUR&precipunit=INCH&coloured=coloured&pictoicon=0&pictoicon=1&maxtemperature=0&maxtemperature=1&mintemperature=0&mintemperature=1&windspeed=0&windspeed=1&windgust=0&windgust=1&winddirection=0&winddirection=1&uv=0&uv=1&humidity=0&humidity=1&precipitation=0&precipitation=1&precipitationprobability=0&precipitationprobability=1&spot=0&spot=1&pressure=0&pressure=1&layout=dark"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 378px; height: 467px"></iframe><div><!-- DO NOT REMOVE THIS LINK --><a href="https://www.meteoblue.com/en/weather/week/alexandria_united-states_4744091?utm_source=weather_widget&utm_medium=linkus&utm_content=daily&utm_campaign=Weather%2BWidget" target="_blank" rel="noopener">meteoblue</a></div>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather Forecast</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+
+</head>
+<body>
+<table>
+<div id="forecast"></div>
+<img id="ForecastIcon" src=""></img>
+
+
+<script type="text/javascript">
+	var available = {
+    "url": "https://api.weather.gov/gridpoints/LWX/102,68/forecast",
+    "method": "GET",
+    } 
+
+    $.ajax(available).done(function (response) {
+    console.log(response);
+
+    for (i = 0; i <= 14; i++){
+	    var day = response.properties.periods[i].name;
+	    var forecast = response.properties.periods[i].detailedForecast;
+		var getIcon = response.properties.periods[i].icon;
+		
+		var img = new Image();   // Create new img element
+		img.addEventListener('load', function() {
+		  // execute drawImage statements here
+		}, false);
+		img.src = getIcon; // Set source path
+
+
+
+	    $("#forecast").append("<h1>"+day+"<br>").append(img).append("<br>"+forecast+"<hr>");
+
+}});
+
+
+
+</script>
+</body>
+</html>
