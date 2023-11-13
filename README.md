@@ -1,8 +1,8 @@
 <script language="text/css">
 thermometer {
   background-color: white;
-  </script>
 
+  </style>
 I love weather... and Yoshi. The end.
 
 
