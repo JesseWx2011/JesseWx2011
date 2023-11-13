@@ -7,6 +7,8 @@ I love weather... and Yoshi. The end.
 <center><h1>Looks like in my area it is:</h1></center>
 <a href="https://app.weathercloud.net/d3641315345"><img src="https://app.weathercloud.net/device/sticker/3641315345"></a>
 <a href="https://app.weathercloud.net/d3641315345"><img src="https://app.weathercloud.net/device/sticker/1170694815"></a>
+Thermoneter:
+<img src="https://dinoswxreport.altervista.org/wp-content/uploads/thermometer.php"></img>
 
   <center><h2>Most Recent Time - 29"84 Wario Stadium 7/8/23</h2></center>
 
