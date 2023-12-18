@@ -10,7 +10,7 @@ Thermoneter:
 
   <center><h2>Most Recent Time - 29"84 Wario Stadium 7/8/23</h2></center>
 
-<h3>I plan to release more of my MK records soon!</h3>
+<h3>I have not been setting any new Mario Kart Records in a while, becuase I am currently writing Python and PHP and JavaScript. I will hopefully get back to that someday.</h3>
 
 I luv Yoshi!!!
 
