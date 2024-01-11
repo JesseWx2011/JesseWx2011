@@ -8,7 +8,7 @@ I love weather... and Yoshi. The end.
 Thermoneter:
 <div class="thermometer"><img src="https://dinoswxreport.altervista.org/wp-content/thermometer.php" style="max-width: 100%;background-color: white;></img>
 
-  <center><h2>Most Recent Time - 29"84 Wario Stadium 7/8/23</h2></center>
+  <center><h2>Looks like I havent seen any Mario Kart Records Recently...</h2></center>
 
 <h3>I have not been setting any new Mario Kart Records in a while, becuase I am currently writing Python and PHP and JavaScript. I will hopefully get back to that someday.</h3>
 
