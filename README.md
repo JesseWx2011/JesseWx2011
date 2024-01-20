@@ -17,3 +17,4 @@ I luv Yoshi!!!
 
 Still learning the basics of coding. My dream, to be meteoroligist someday.
 <h3>I have been coding for <b>Less than 1 Year</b></h3>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=JesseWx2011&theme=tokyonight" alt="mystreak"/>
