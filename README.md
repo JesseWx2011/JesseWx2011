@@ -20,4 +20,5 @@ Still learning the basics of coding. My dream, to be meteoroligist someday.
 <div align="center">
   My Stats:
 </div>
+<img src="https://myreadme.vercel.app/api/embed/JesseWx2011?panels=userstatistics,toprepositories,toplanguages,commitgraph" alt="reimaginedreadme" />
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=JesseWx2011&theme=tokyonight" alt="mystreak"/>
