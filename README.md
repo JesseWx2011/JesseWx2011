@@ -3,7 +3,7 @@ Hi! My name is Jesse. I am a very VERY young user on github. I have had my intre
 
 Coding since May 22 2023.
 
-<center><h1>Looks like in my area it is:</h1></center>
+<center><h1>Looks like the weather in my area is:</h1></center>
 <a href="https://app.weathercloud.net/d3641315345"><img src="https://app.weathercloud.net/device/sticker/3641315345"></a>
 <a href="https://app.weathercloud.net/d3641315345"><img src="https://app.weathercloud.net/device/sticker/1170694815"></a>
 Thermoneter:
