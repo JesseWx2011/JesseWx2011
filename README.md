@@ -7,4 +7,6 @@
    <div>I have created 9 respitories.</div>
   <div>I am currently working on weather-dashboard and Intellistar.</div>
 <img src="https://github-readme-stats.vercel.app/api?username=JesseWx2011&show_icons=true&bg_color=black">
+  <h3>These respitories are being deleted soon:</h3>
+   <li>otherwebsitelol.github.io - No Longer Updating this respitory, plan to delete by end of March or Early April.</li>
 </div>
