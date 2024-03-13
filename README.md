@@ -9,4 +9,5 @@
 <img src="https://github-readme-stats.vercel.app/api?username=JesseWx2011&show_icons=true&bg_color=black">
   <h3>These respitories are being deleted soon:</h3>
    <li>otherwebsitelol.github.io - No Longer Updating this respitory, plan to delete by end of March or Early April.</li>
+   <li>iPhone - Project Failure</li>
 </div>
