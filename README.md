@@ -1,7 +1,6 @@
-
+<div align="center">
 <h1>Hello!</h1>
 <h3>My Name is Jesse, a young developer, and living in Maryland, USA.</h3>
-<div align="center">
 <div align="center">I have been wrtiting code for Less than a year. </div>
 <div align="center">My Main Intrest is Meterology.</div>
    <div>I have created 9 respitories.</div>
