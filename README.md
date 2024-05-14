@@ -5,5 +5,5 @@
 <div align="center">My Main Intrest is Meterology.</div>
    <div>I have 6 respitories (or projects.), including 1 that has been archived..</div>
   <div>I am currently working on weather-dashboard and Intellistar.</div>
-<img src="https://github-readme-stats.vercel.app/api?username=JesseWx2011&show_icons=true&bg_color=black">
+<img src="https://github-readme-stats.vercel.app/api?username=JesseWx2011&show_icons=true&theme=dark">
 </div>
