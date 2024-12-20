@@ -12,7 +12,8 @@
         <h1>Hi, I'm Jesse :)</h1>
          <p>Teenage Developer, Writing Code since I was twelve.</p>
          <h2>Weather Enthusiast, Follower of Jesus Christ:</h2>
-         <div><b>For I have treasured your word in my heart that I may not sin against thee..</b><i> -Psalm 119:11</i></div>
-         
+         <div><b>For I have treasured your word in my heart that I may not sin against thee..</b><i> -Psalm 119:11</i>
+</div>
+         </div>
    </body>
 </html>
