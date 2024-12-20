@@ -14,6 +14,5 @@
          <h2>Weather Enthusiast, Follower of Jesus Christ:</h2>
          <div><b>For I have treasured your word in my heart that I may not sin against thee..</b><i> -Psalm 119:11</i></div>
          
-      </div>
    </body>
 </html>
