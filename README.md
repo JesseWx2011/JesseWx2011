@@ -10,7 +10,7 @@
    <body>
       <div style="font-family: "Montserrat", sans-serif; text-align: center;"/>
         <h1>Hi, I'm Jesse :)</h1>
-         <p>Teenage Developer, Writing Code since I was twelve.</p>
+         <p>Teenage Developer, Writing Code since I was twelve. My profile image is a likely tornado that occured on the early morning of December 29th 2024, in my hometown of Milton, Florida.</p>
          <h2>Weather Enthusiast, Follower of Jesus Christ:</h2>
          <div><b>For I have treasured your word in my heart that I may not sin against thee..</b><i> -Psalm 119:11</i>
 </div>
