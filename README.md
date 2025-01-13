@@ -10,10 +10,12 @@
    <body>
       <div style="font-family: "Montserrat", sans-serif; text-align: center;"/>
         <h1>Hi, I'm Jesse :)</h1>
-         <p>Teenage Developer, Writing Code since I was twelve. My profile image is a likely tornado that occured on the early morning of December 29th 2024, in my hometown of Milton, Florida.</p>
-         <h2>Weather Enthusiast, Follower of Jesus Christ:</h2>
-         <div><b>For I have treasured your word in my heart that I may not sin against thee..</b><i> -Psalm 119:11</i>
-</div>
+         <p>Teenage Developer, Writing Code since I was twelve.</p>
+         <li>Christian Developer</li>
+         <li>Lives in Milton, FL</li>
+         <li>Almost 2 years of JavaScript/HTML/CSS experience</li>
+         <li>Weather Content Creator</li>
+      </div>
          <h1>GitHub Stats:</h1>
          <h3>Overalls:</h3>
          <img align="center" src="https://github-readme-stats.vercel.app/api?username=JesseWx2011&rank_icon=percentile">
