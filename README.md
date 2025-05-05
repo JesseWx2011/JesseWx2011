@@ -15,12 +15,5 @@
          <li>Lives in Milton, FL</li>
          <li>2 years of JavaScript/HTML/CSS experience</li>
          <li>Weather Content Creator</li>
-      </div>
-         <h1>GitHub Stats:</h1>
-         <h3>Overalls:</h3>
-         <img align="center" src="https://github-readme-stats.vercel.app/api?username=JesseWx2011&rank_icon=percentile">
-         <h3>Top Languages:</h3>
-         <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=JesseWx2011"/>
-         </div>
-   </body>
+      </div>   </body>
 </html>
