@@ -13,7 +13,7 @@
          <p>Teenage Developer, Writing Code since I was twelve.</p>
          <li>Christian Developer</li>
          <li>Lives in Milton, FL</li>
-         <li>Almost 2 years of JavaScript/HTML/CSS experience</li>
+         <li>2 years of JavaScript/HTML/CSS experience</li>
          <li>Weather Content Creator</li>
       </div>
          <h1>GitHub Stats:</h1>
