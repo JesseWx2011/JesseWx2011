@@ -21,5 +21,11 @@
 
   <h2>Here is what I am working on!</h2>
   <li><a href="https://panhandlewx.vercel.app"/>Milton Weather Dashboard</a> - A Weather Website that fetches data from my weather station and displays a lot of weather information.</li>
+
+  <h2>Find me:</h2>
+  <p>You can find me on:</p>
+
+  <li>YouTube - <a href="https://www.youtube.com/channel/UCUbQmeRzhTT9dXMkvAb_d_A">JesseLikesWeather</a></li>
+  <li>Twitter (X) - <a href="https://x.com/floridatyphoon">@floridatyphoon</a></li>
    </body>
 </html>
