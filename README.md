@@ -2,7 +2,7 @@
    <head>
       <meta charset="UTF-8"/>
       <meta name="og:title" content="Jesse Hasty's GitHub README page"/>
-      <meta name="og:date" content="2026-07-08"/>
+      <meta name="og:date" content="2026-07-31"/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -26,6 +26,6 @@
   <p>You can find me on:</p>
 
   <li>YouTube - <a href="https://www.youtube.com/channel/UCUbQmeRzhTT9dXMkvAb_d_A">JesseLikesWeather</a></li>
-  <li>Twitter (X) - <a href="https://x.com/floridatyphoon">@floridatyphoon</a></li>
+  <li>Twitter (X) - <a href="https://x.com/atthestoorm">@atthestoorm</a></li>
    </body>
 </html>
